@@ -1,0 +1,46 @@
+{
+    "brand": {
+        "name": "EmberNestedRouteTest",
+        "copywrite": "&copy; 2020",
+        "slogan": "Congrats, your Gavant Ember.js app is working! 🎉"
+    },
+    "actions": {
+        "save": "Save",
+        "submit": "Submit",
+        "search": "Search",
+        "cancel": "Cancel",
+        "remove": "Remove",
+        "goBack": "Go back"
+    },
+    "serverErrors": {
+        "unknown": {
+            "unexpected": "Sorry, an unexpected error has occurred."
+        },
+        "cognito": {
+            "NotAuthorizedException": "Incorrect username or password.",
+            "InvalidPasswordException": "The entered password is not valid. Please make sure it meets all requirements and try again.",
+            "CodeMismatchException": "The provided verification code is invalid or expired.",
+            "ExpiredCodeException": "The provided verification code is expired."
+        },
+        "heading": "The following {count, plural, =1 {error} other {errors}} occurred while attempting to process your request.",
+        "undefined": "Sorry, an unexpected error has occurred."
+    },
+    "login": {
+        "title": "Login"
+    },
+    "fourOhFour": {
+        "title": "404",
+        "subtitle": "Page not found",
+        "message": "Sorry, the requested page could not be found."
+    },
+    "fourOhThree": {
+        "title": "403",
+        "subtitle": "Forbidden",
+        "message": "Sorry, you do not have permission to access this page."
+    },
+    "fiveHundred": {
+        "title": "500",
+        "subtitle": "Internal server error",
+        "message": "Sorry, an unexpected error has occurred."
+    }
+}
