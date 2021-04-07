@@ -12,7 +12,7 @@ export function PageHeader<TBase extends Constructor>(Base: TBase) {
          * @type {string}
          * @memberof PageHeaderClass
          */
-        headerController = 'application';
+        headerController = 'authenticated';
 
         /**
          * The name/path of the template to render into the header outlet. This will default to
@@ -36,7 +36,7 @@ export function PageHeader<TBase extends Constructor>(Base: TBase) {
             super.renderTemplate(controller, model);
 
             this.render(this.headerTemplate, {
-                into: 'application',
+                into: 'authenticated',
                 outlet: 'header',
                 controller: this.headerController
             });
@@ -54,7 +54,7 @@ export function PageFooter<TBase extends Constructor>(Base: TBase) {
          * @type {string}
          * @memberof PageHeaderClass
          */
-        footerController = 'application';
+        footerController = 'authenticated';
 
         /**
          * The name/path of the template to render into the header outlet. This will default to
@@ -78,7 +78,7 @@ export function PageFooter<TBase extends Constructor>(Base: TBase) {
             super.renderTemplate(controller, model);
 
             this.render(this.footerTemplate, {
-                into: 'application',
+                into: 'authenticated',
                 outlet: 'footer',
                 controller: this.footerController
             });
@@ -96,7 +96,7 @@ export function PageNav<TBase extends Constructor>(Base: TBase) {
          * @type {string}
          * @memberof PageHeaderClass
          */
-        navController = 'application';
+        navController = 'authenticated';
 
         /**
          * The name/path of the template to render into the header outlet. This will default to
@@ -120,7 +120,7 @@ export function PageNav<TBase extends Constructor>(Base: TBase) {
             super.renderTemplate(controller, model);
 
             this.render(this.navTemplate, {
-                into: 'application',
+                into: 'authenticated',
                 outlet: 'nav',
                 controller: this.navController
             });

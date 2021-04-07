@@ -1,4 +1,3 @@
-import PageLayout from 'ember-nested-route-test/mixins/page-layout';
 import CurrentUserService from 'ember-nested-route-test/services/current-user';
 import { action } from '@ember/object';
 import Transition from '@ember/routing/-private/transition';
@@ -9,7 +8,7 @@ import IntlService from 'ember-intl/services/intl';
 import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mixin';
 import SessionService from 'ember-simple-auth/services/session';
 
-export default class Application extends PageLayout(Route.extend(ApplicationRouteMixin)) {
+export default class Application extends Route.extend(ApplicationRouteMixin) {
     routeAfterAuthentication = 'dashboard';
     @service currentUser!: CurrentUserService;
     @service session!: SessionService;

@@ -7,12 +7,16 @@ export default class Router extends EmberRouter {
     rootURL = config.routerRootURL;
 }
 
-Router.map(function() {
+Router.map(function () {
     this.route('login');
-    this.route('password', function() {
+    this.route('password', function () {
         this.route('forgot');
         this.route('reset');
         this.route('create');
+    });
+
+    this.route('authenticated', { path: '' }, function () {
+        this.route('dashboard');
     });
 
     //make sure these routes are always defined last!
